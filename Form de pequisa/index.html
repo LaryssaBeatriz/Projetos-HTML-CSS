@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulário de pesquisa </title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+     <h1 id="title">Formulário de pesquisa</h1>
+  <p id="description">Um pequeno formulário de pesquisa da comunidade dorameira </p>
+
+  <form id="survey-form">
+    <label id="name-label" for="name" >Insira seu nome</label> 
+    <input id="name" type="text"placeholder="Insert your name here" required/>
+    <label id="email-label" for="email" >Insira seu email </label> 
+    <input id="email" type="email" placeholder="Insert your email here" required/>
+
+    <select id="dropdown">
+      <option value="romance">Romance</option>
+      <option value="terror">Terror</option>
+      <option value="suspense">Suspense</option>
+      <option value="comedia">Comedia</option>
+      <option value="drama">Drama</option>
+      <option value="fantasia">Fantasia</option>
+      <option value="ficcao-historica">Ficção Histórica</option>
+    </select>
+
+    <div>
+      <h2 class="question">Você está assistindo algum dorama atualmente?</h2>
+      <label id="sim-label" for="sim">Sim</label>
+      <input type="radio" name="currently-watching" value="sim" id="sim"/>
+      <label id="nao-label" for="nao">Não</label>
+      <input type="radio" name="currently-watching" value="nao" id="nao"/>
+    </div>
+
+       <label id="number-label" for="number">Quantos doramas você está assistindo agora?</label> 
+    <input id="number" type="number"  min="1" max="10" placeholder="Insira a quantidade de doramas que você está assistindo"/>
+
+    <div id="checkboxes">
+      <h2 class="question"> Quais os principais motivos para você começar um dorama?</h2>
+      <label id="elenco-label" for="elenco">Elenco</label>
+      <input type="checkbox" value="elenco" id="elenco"/>
+      <label id="sinopse-label" for="sinopse">Sinopse</label>
+      <input type="checkbox" value="sinopse" id="sinopse"/>
+      <label id="trailer-label" for="trailer">Trailer</label>
+      <input type="checkbox" value="trailer" id="trailer"/>
+      <label id="ost-label" for="ost">OST</label>
+      <input type="checkbox" value="ost" id="ost"/>
+      <label id="escritor-label" for="escritor">Escritor(a)</label>
+      <input type="checkbox" value="escritor" id="escritor"/>
+      <label id="rede-social-label" for="rede-social">Comentários em redes sociais</label>
+      <input type="checkbox" value="rede-social" id="rede-social"/>
+    </div>
+
+      <label for="titulo-dorama" id="label-titulo-dorama">Conte-nos qual o título do seu dorama favorito</label> 
+      <textarea id="titulo-dorama" rows="2" cols="10">
+          Ex: Goblin, O que houve com a secretária Kim? e etc. 
+      </textarea> 
+
+      <input type="submit" id="submit" value="Enviar">
+
+  </form> 
+
+</body>
+</html>
