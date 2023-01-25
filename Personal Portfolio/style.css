@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+  }
+  
+  #welcome-section{
+    height:100vh;
+    background-color:#594659;
+    text-align: center;
+  }
+  
+  #welcome-section h1{
+    display:block;
+    margin-top: 0;
+  }
+  
+  #navbar{
+    margin-top:0;  
+    height: 5vh;
+    background-color: #D9D3C7;
+    position: fixed;
+    width:100%;
+  }
+  
+  @media (max-width: 1068px){
+      #navbar{
+        background-color: #8C7B8C;
+      }
+  }
