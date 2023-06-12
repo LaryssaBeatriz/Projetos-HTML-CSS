@@ -4,28 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BTS</title> 
+    <title>BTS - 방탄 소년단 </title> 
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
     <header id="header">
-        <img src="data:image/png;base64,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" alt="logo" id="header-img"/>
-        <nav id="nav-bar">
-          <button class="nav-link" href="video">Video</button>
-          <button class="nav-link" href="form">Form</button>
-          <button class="nav-link" href="">Link</button>
-        </nav>
+        <img src="./imgs/bts4.png" alt="Imagem promocional do BTS contendo os sete membros do grupo"/>
       </header>
       <main>
-          <h1> BTS </h1> 
+          <h1>BTS</h1> 
+          <h1>방탄 소년단</h1>
           <h2> Quem são e o que fazem</h2>
         <section>
          <p> Composto por RM, Jin, Suga, J-Hope, Jimin, V e Jungkook, o BTS (Bangtan Sonyeodan em coreano romanizado) é um grupo masculino de k-pop que tem sido o principal nome no que chama-se de Hallyu ou Onda coreana. Juntamente com os doramas ou k-dramas, o grupo têm sido responsável por disseminar a cultura coreana através da música e dos conteúdos criados pelos membros. 
            </p>
         </section>
-    
-          <iframe width="560" id="video" height="315" src="https://www.youtube.com/embed/aqW4xXUgmno" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        
+
+        <ul class="carrossel">
+          <li>
+            <input type="radio" id="slide1" name="slide" checked>
+            <label for="slide1"></label>
+            <img src="./imgs/namjoon.png" alt="Kim Namjoon"> 
+            <p>  RM é o líder do BTS. RM é o nome artístico de Kim Namjoon, nascido em Seul no ano de 1994. Namu, como é chamado pelos fãs, é um rapper, compositor e produtor. A maioria dos trabalhos do BTS possuem partes creditadas a ele assim como trabalhos de muitos outros artistas. RM tem duas mixtapes solos - RM e Mono - e um álbum que foi lançado em 2022 chamado Indigo </p>            
+          </li>
+          <li>
+            <input type="radio" id="slide2" name="slide" >
+            <label for="slide2"></label>
+            <img src="./imgs/seokjin.jpg" alt="Kim Seokjin"> 
+            <p> Jin é um dos membros do BTS. Kim Seokjin é cantor, dançarino e compositor nascido em 1992 também em Seul. Jin é conhecido pela beleza e se apresenta como o Worldwide Handsome. Jin também é ator de formação e podemos perceber o seu talento em diversos conteúdos do BTS. Jin possui lançamentos solos, em sua maioria tracks dos álbuns mas há alguns lançamentos especiais como Abyss, The Astronaut e a OST Yours</p>
+          </li>
+          <li>
+            <input type="radio" id="slide3" name="slide" >
+            <label for="slide3"></label>
+            <img src="./imgs/min yoongi.png" alt="Min Yoongi"> 
+            <p> SUGA é um dos membros do BTS e uma das personas de Min Yoongi. SUGA é rapper, cantor, compositor e produtor nascido em Daegu no ano de 1993. Assim como RM também tem participação na composição de grande parte das músicas do grupo. É conhecido fora do BTS pelos seus trabalhos como produtor das músicas de outros artistas - alguns também possui participação -, além disso SUGA possui solos, duas mixtapes - D-1 e D-2 - e um álbum - D-Day - sob a persona de AGUST D. </p>
+          </li>
+          <li>
+            <input type="radio" id="slide4" name="slide" >
+            <label for="slide4"></label>
+            <img src="./imgs/hoseok.jpg" alt="Jung Hoseok"> 
+            <p> J-Hope é um dos rappers do BTS junto com SUGA e RM e também é um dos dançarinos principais do BTS. Nascido em 1994 na cidade de Gwangju sob o nome Jung Hoseok, J-Hope compõe a rap line - o subgrupo de rappers de um grupo - e assim como os outros dois também é compositor e produtor e possui muitos créditos por composições e produções em músicas do grupo. Possui uma mixtape chamada Hope World e um álbum chamado Jack in the Box - que mostra um lado completamente diferente do J-Hope, levando à teoria de que Jack seria uma de suas personas-. Os trabalhos solos de J-Hope o renderam uma apresentação solo no palco principal de uma das edições do Lollapaloza.  </p>
+          </li>
+          <li>
+            <input type="radio" id="slide5" name="slide" >
+            <label for="slide5"></label>
+            <img src="./imgs/jimin.jpg" alt="Park Jimin"> 
+            <p> Jimin é um dos cantores do BTS e também compõe o subgrupo de dançarinos. Jimin nasceu em 1995 na cidade de Busan. Ele é um especialista em dança moderna que mostra seu talento e conhecimento em diversas perfomances do BTS, tendo algumas apresentações memoráveis como a do MAMA em 2016 onde dançou vendado com J-Hope. Apesar de ter inúmeros trabalhos solos dentro do BTS, somente nos últimos anos Jimin tem feito trabalhos solo externos ao grupo sendo a OST With You uma delas, também temos alguns collabs feitos como Vibe - collab com Taeyang - e Angel - Trilha Sonora do Velozes e Furiosos 10. Recentemente, Jimin também lançou o seu álbum FACE, com músicas que alcançaram o Hot 100 da Billboard </p>
+          </li>
+          <li>
+            <input type="radio" id="slide6" name="slide" >
+            <label for="slide6"></label>
+            <img src="./imgs/taetae.jpg" alt="Kim Taehyung"> 
+            <p> V é um dos membros do BTS. Kim Taehyung é um dos principais rostinhos bonitos do BTS. Nascido em Daegu no ano de 1995. V é o dono de uma das vozes mais marcantes e fortes do grupo e explora bem isso nos trabalhos solo. Alguns de seus lançamentos solo fora dos álbuns são músicas de Natal para as fãs e também outras músicas como Winter Bear. Tae participa da composição de algumas de suas músicas e pode ser visto guiando o processo de criação da música de abertura do BTS In the Soop - um dos conteúdos extra gravados pelo grupo. Além disso temos algumas OSTs gravadas por V como Sweet Night e Christmas Tree. V é o único dos membros do BTS que se arriscou nas telinhas dos doramas, sendo parte do elenco de Hwarang. </p>
+          </li>
+          <li>
+            <input type="radio" id="slide7" name="slide" >
+            <label for="slide7"></label>
+            <img src="./imgs/jungkook.png" alt="Jeon Jungkook"> 
+            <p> Jungkook ou JK como também é chamado pelos fãs, é o mais jovem dos membros do BTS. Dançarino e cantor principal, Jungkook funciona como centro das perfomances na maior parte delas. Ele também é conhecido por algumas composições e pela sensibilidade que possui seja em sua arte ou em sua relação com o ARMY. JK é de Busan e nasceu em 1997. Ele tem em sua conta criações especiais para os fãs como a música Magic Shop, além de algumas produções como Your eyes tell. Além de cantor, dançarino, compositor e produtor, Jungkook também explorou sua faceta como diretor de arte do videoclipe de Life Goes On. Ele possui alguns trabalhos solos nos álbuns do grupo e recentemente lançou uma parceria com Charlie Puth.</p>
+          </li>
+        </ul>
     
         <form id="form" action="https://www.freecodecamp.com/email-submit"> 
         <h4> Insira seu email e receba nossa newsletter sobre o Bangtan</h4>
