@@ -9,7 +9,7 @@ header{
 }
 #header-img{
   height: 15vh;
-  width:auto;
+  margin-left: 26%;
   display:block;
 }
 
@@ -89,42 +89,41 @@ nav{
   background-color: #000; 
   cursor: pointer; 
   display: block; 
-  height: 20px;
+  height: 10px;
   position:absolute; 
-  width: 20px;
+  width: 10px;
   border-radius: 50%;
   z-index : 10; 
-  
 }
 
 .carrossel li:nth-child(1) label{
 left: 10px;
-top: 115px;
+top: 20%;
 }
 
 .carrossel li:nth-child(2) label{
 left: 10px;
-top: 145px;
+top: 25%;
 }
 .carrossel li:nth-child(3) label{
 left: 10px;
-top: 175px;
+top: 30%;
 }
 .carrossel li:nth-child(4) label{
 left: 10px;
-top: 205px;
+top: 35%;
 }
 .carrossel li:nth-child(5) label{
 left: 10px;
-top:235px;
+top:40%;
 }
 .carrossel li:nth-child(6) label{
 left: 10px;
-top: 265px;
+top: 45%;
 }
 .carrossel li:nth-child(7) label{
 left:10px;
-top: 295px;
+top: 50%;
 }
 
 .carrossel li input:checked ~img {
@@ -135,4 +134,53 @@ z-index: 10;
 
 .carrossel li input:checked ~p{
 visibility: visible;
+}
+
+@media (width:1366px){
+  #header-img{
+    height: 15vh;
+    margin-left: 16%;
+    display:block;
+  }
+  
+  .carrossel label{
+    background-color: #000; 
+    cursor: pointer; 
+    display: block; 
+    height: 7px;
+    position:absolute; 
+    width: 7px;
+    border-radius: 50%;
+    z-index : 10; 
+  }
+
+  .carrossel li:nth-child(1) label{
+    left: 10px;
+    top: 20%;
+    }
+    
+    .carrossel li:nth-child(2) label{
+    left: 10px;
+    top: 27%;
+    }
+    .carrossel li:nth-child(3) label{
+    left: 10px;
+    top: 34%;
+    }
+    .carrossel li:nth-child(4) label{
+    left: 10px;
+    top: 41%;
+    }
+    .carrossel li:nth-child(5) label{
+    left: 10px;
+    top:48%;
+    }
+    .carrossel li:nth-child(6) label{
+    left: 10px;
+    top: 55%;
+    }
+    .carrossel li:nth-child(7) label{
+    left:10px;
+    top: 62%;
+    }
 }
