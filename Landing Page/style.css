@@ -1,26 +1,34 @@
+:root{
+  --varMargem: 5vw;
+}
+
 body{
   margin:0;
-  background-color: #BA9CD9;
+  background-color: #e7dcf2;
 }
+
 header{
   display: flex;
   width:100%;
   max-height: fit-content;
+  padding-left: 26%;
 }
-#header-img{
-  height: 15vh;
-  margin-left: 26%;
-  display:block;
+h1, h2{
+  text-align:left;
+  margin-left: var(--varMargem);
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
-h1{
-  text-align: center;
+main {
+ margin-top: 10vh; 
+ font-size: 2.7vh;
 }
-h2{
-  margin-top: -1em;
-  text-align: center;
+main h2{
+  margin-top: 10vh;
 }
-
+main p {
+  margin: -1vh var(--varMargem) ;
+  text-align: justify;
+}
 nav{
   display: flex;
   margin-top: 1em; 
@@ -29,22 +37,6 @@ nav{
   margin: 0;
   padding: 0.5em 7.8em;
 }
-#form{
-  border: 2px solid black;
-  margin: 3em auto;
-  width: 200px;
-  height: 70px;
-  padding:1.5em 3em 3em ;
-}
-#form h4{
-  text-align: center;
-  margin: 0;
-}
-
-#form input{
-  margin: 1em 0;
-}
-
 .carrossel {
   display: block;
   height: 40vh;
@@ -54,12 +46,10 @@ nav{
   position: relative;
   
 }
-
 .carrossel li {
   list-style : none;
   position: absolute;
 }
-
 .carrossel img{
   opacity: 0;
   visibility: hidden;
@@ -70,7 +60,6 @@ nav{
   left: 10vh;
   top: 5vh;
 }
-
 .carrossel p {
   visibility: hidden;
   display: block; 
@@ -78,13 +67,12 @@ nav{
   width: 60vw;
   height: 35vh;
   top:10vh;
-  left: 28vw;
+  left: 25vw;
+  text-align: justify;
 }
-
 .carrossel input {
   display: none;
 }
-
 .carrossel label{
   background-color: #000; 
   cursor: pointer; 
@@ -95,43 +83,39 @@ nav{
   border-radius: 50%;
   z-index : 10; 
 }
-
 .carrossel li:nth-child(1) label{
-left: 10px;
+left: 3vw;
 top: 20%;
 }
-
 .carrossel li:nth-child(2) label{
-left: 10px;
+left: 3vw;
 top: 25%;
 }
 .carrossel li:nth-child(3) label{
-left: 10px;
+left: 3vw;
 top: 30%;
 }
 .carrossel li:nth-child(4) label{
-left: 10px;
+left: 3vw;
 top: 35%;
 }
 .carrossel li:nth-child(5) label{
-left: 10px;
+left: 3vw;
 top:40%;
 }
 .carrossel li:nth-child(6) label{
-left: 10px;
+left: 3vw;
 top: 45%;
 }
 .carrossel li:nth-child(7) label{
-left:10px;
+left:3vw;
 top: 50%;
 }
-
 .carrossel li input:checked ~img {
 opacity: 1;
 visibility: visible;
 z-index: 10;
 }
-
 .carrossel li input:checked ~p{
 visibility: visible;
 }
