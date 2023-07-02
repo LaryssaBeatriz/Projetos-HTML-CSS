@@ -10,7 +10,7 @@ body{
 header{
   display: flex;
   width:100%;
-  max-height: fit-content;
+  max-width: fit-content;
   padding-left: 26%;
 }
 h1, h2{
@@ -118,6 +118,24 @@ z-index: 10;
 }
 .carrossel li input:checked ~p{
 visibility: visible;
+}
+
+
+#secao-albuns{
+font-size: medium;
+margin-left: var(--varMargem);
+margin-top: -5vh;
+}
+
+#secao-albuns img{
+ width: 10vw;
+ height: 10vw;
+}
+.albuns {
+  margin: 0.5em;
+  text-align: center;
+  display: inline-block;
+  width:12vw;
 }
 
 @media (width:1366px){
