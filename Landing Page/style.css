@@ -7,11 +7,13 @@ body{
   background-color: #e7dcf2;
 }
 
-header{
-  display: flex;
-  width:100%;
-  max-width: fit-content;
-  padding-left: 26%;
+header h1{
+  text-align: center;
+  font-size: 7em;
+  font-family:'Times New Roman', Times, serif;
+  color: #000;
+ text-shadow: 5px 5px #ba9cd9;
+ margin-top: 5vh;
 }
 h1, h2{
   text-align:left;
@@ -22,20 +24,19 @@ main {
  margin-top: 10vh; 
  font-size: 2.7vh;
 }
-main h2{
-  margin-top: 10vh;
+#secao-imagem{
+  height: 37vh;
+  background-color: #ba9cd9;
+  padding: 5vh;
+}
+#secao-imagem img{
+  height: 37vh;
+  position: relative;
+  left: 17vw;
 }
 main p {
-  margin: -1vh var(--varMargem) ;
+  margin:  var(--varMargem) ;
   text-align: justify;
-}
-nav{
-  display: flex;
-  margin-top: 1em; 
-}
-.nav-link{
-  margin: 0;
-  padding: 0.5em 7.8em;
 }
 .carrossel {
   display: block;
@@ -66,13 +67,13 @@ nav{
   position: absolute;
   width: 60vw;
   height: 35vh;
-  top:10vh;
+  top:2vh;
   left: 25vw;
   text-align: justify;
 }
 .carrossel input {
   display: none;
-}
+} 
 .carrossel label{
   background-color: #000; 
   cursor: pointer; 
@@ -119,8 +120,6 @@ z-index: 10;
 .carrossel li input:checked ~p{
 visibility: visible;
 }
-
-
 #secao-albuns{
 font-size: medium;
 margin-left: var(--varMargem);
@@ -137,6 +136,38 @@ margin-top: -5vh;
   display: inline-block;
   width:12vw;
 }
+
+#recentes h2{
+  font-size: 1.3em;
+  margin-top: 10vh;
+  margin-left: var(--varMargem);
+}
+
+#recentes h3{
+  margin-left: var(--varMargem);
+  font-weight: normal;
+  margin-bottom: 0.8vh;
+}
+
+#take-two{
+  width: 20vw;
+  margin-left: var(--varMargem);
+}
+
+#take2{
+  display: inline-block;
+  margin-bottom: -10vh;
+}
+
+footer{
+  margin-top: 1vh;
+  background-color: #ad82d9;
+  padding:1vh;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1em;
+}
+
 
 @media (width:1366px){
   #header-img{
